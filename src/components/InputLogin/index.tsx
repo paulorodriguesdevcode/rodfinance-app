@@ -1,9 +1,6 @@
 import './style.scss'
 
-interface InputLoginProps {
-  type:string
-  name:string
-  placeholder:string
+interface InputLoginProps extends React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>{
 }
 
 export function InputLogin(props:InputLoginProps) {
