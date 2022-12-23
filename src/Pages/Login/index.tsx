@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { login } from "../../api/auth";
-import { ButtonLogin } from "../../Components/ButtonLogin";
-import { InputLogin } from "../../Components/InputLogin";
+import { ButtonLogin } from "../../components/ButtonLogin";
+import { InputLogin } from "../../components/InputLogin";
 import { useNavigate } from "react-router-dom";
 import "./style.scss";
 
