@@ -1,0 +1,88 @@
+@import "../../global/fonts.scss";
+
+body {
+  background-color: #412973;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background-color: #412973;
+
+  h3 {
+    margin-left: 50px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 5px;
+  }
+
+  svg {
+    margin-right: 50px;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.envolve {
+  display: flex;
+
+  .arrow {
+    cursor: pointer;
+  }
+
+  nav {
+    background-color: #412973;
+    min-width: 150px;
+    min-height: 89.9vh;
+
+    .arrow {
+      color: #fff;
+      cursor: pointer;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      a {
+        margin: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-family: "Julius Sans One", sans-serif;
+        cursor: pointer;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+
+      .home-link {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .nav-inactive {
+    display: none;
+  }
+
+  main {
+    margin: 20px;
+    width: 100%;
+
+    h4 {
+      color: white;
+      font-weight: bold;
+    }
+
+    table {
+      overflow-x: auto;
+      margin-top: 50px;
+
+      .header {
+        color: white;
+      }
+    }
+  }
+}
