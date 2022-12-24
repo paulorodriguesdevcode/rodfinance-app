@@ -1,0 +1,11 @@
+.navbar {
+    background-color: #412973;
+
+    .navbar-brand{
+        margin-left: -8%;
+        color: white;
+        &:hover{
+            color: white;
+        }
+    }
+}

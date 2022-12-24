@@ -1,36 +1,30 @@
 import "./style.scss";
 
-import {BiUserCircle} from 'react-icons/bi'
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getMovements } from "../../api/movements";
+import { NavbarDefault } from "../../components/Nav";
 
 export function Home() {
 
-  const [menuIsActive, setMenuIsActive] = useState(true)
   const [movements, setMovements] = useState([]);
   
   async function oi(){
     const seta = await getMovements()
-    console.log(seta)    
+    console.log(seta)
+    setMovements([])    
   }
-  
-
   useEffect(() => {
     oi()
   }, [movements])
 
 
   return (
-    <div className="nav-header">
-      <header>
-        <h3>RODRENT</h3>
-        <BiUserCircle size={30}/>
-      </header>
+     <>
+      <NavbarDefault/>
       
-      <div className="envolve">
-      <p className="arrow" onClick={() => setMenuIsActive(!menuIsActive)}>&rarr;</p> 
-        <nav className={menuIsActive ? ('nave-active'):('nav-inactive')} >        
+      <div className="content">
+        <nav >        
           <div className="links">
             <Link to="home" className="home-link">Home</Link>
             <Link to="dashboard">Dashboard</Link>
@@ -69,6 +63,6 @@ export function Home() {
           </table>
         </main>
       </div>
-    </div>
+    </>
   );
 }

@@ -1,17 +1,17 @@
 @import "../../global/fonts.scss";
 
 body {
-  background-color: #412973;
+background-color: #DADADA;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-color: #412973;
+  background-color: #412973;
 
   h3 {
-    margin-left: 50px;
+    margin-left: 10px;
     font-weight: bold;
     color: #fff;
     letter-spacing: 5px;
@@ -24,17 +24,13 @@ header {
   }
 }
 
-.envolve {
+.content {
   display: flex;
-
-  .arrow {
-    cursor: pointer;
-  }
 
   nav {
     background-color: #412973;
-    min-width: 150px;
-    min-height: 89.9vh;
+    min-width: 200px;
+    min-height: 90.8vh;
 
     .arrow {
       color: #fff;
@@ -72,7 +68,7 @@ header {
     width: 100%;
 
     h4 {
-      color: white;
+      color: #412973;
       font-weight: bold;
     }
 
@@ -81,7 +77,7 @@ header {
       margin-top: 50px;
 
       .header {
-        color: white;
+        color: #412973;
       }
     }
   }
