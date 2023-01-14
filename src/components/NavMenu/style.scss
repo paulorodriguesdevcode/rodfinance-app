@@ -1,0 +1,31 @@
+.nav-menu {
+    background-color: #412973;
+    min-width: 10vw;
+    min-height: 100vh;
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      a {
+        margin: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-family: "Julius Sans One", sans-serif;
+        cursor: pointer;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+
+      .home-link {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  .nav-inactive {
+    display: none;
+  }

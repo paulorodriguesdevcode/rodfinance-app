@@ -1,11 +1,5 @@
 @import "../../global/fonts.scss";
 
-
-
-// .menu-toggler {
-//   display: none;
-// }
-
 @media screen and (max-width: 1140px) {
   .nav-menu {
     display: none;
@@ -41,44 +35,11 @@ header {
 .content {
   display: flex;
 
-  .nav-menu {
-    background-color: #412973;
-    min-width: 10vw;
-    min-height: 100vh;
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      a {
-        margin: 10px;
-        color: #fff;
-        text-decoration: none;
-        font-family: "Julius Sans One", sans-serif;
-        cursor: pointer;
-
-        &:hover {
-          font-weight: bold;
-        }
-      }
-
-      .home-link {
-        margin-top: 50px;
-      }
-    }
-  }
-
-  .nav-inactive {
-    display: none;
-  }
-
   main {
     margin-top: 20px;
     margin-left: 30px;
     width: 100%;
     font-family: "Julius Sans One", sans-serif;
-    
 
     .cards {
       display: flex;
@@ -86,60 +47,12 @@ header {
       align-items: center;
       margin-top: 2%;
       text-align: center;
-      // font-family: "Julius Sans One", sans-serif;
-
-      .card {
-        background-color: #412973;
-        font-size: 12px;
-        min-width: 29%;
-        margin: 2%;
-        border-radius: 10px 10px 10px 10px;
-        
-        .card-title {
-          color: #412973;
-          background-color: #a195bc;
-          border: none;
-          font-size: 15px;
-          height: 30px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-weight: bold;
-        }
-
-        .card-body {
-          border: none;
-          color: #fff;
-          text-align: center;
-          height: 70px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          span {
-            font-size: 25px;
-            font-weight: bold;
-          }
-        }
-      }
     }
 
     h5 {
       color: #412973;
       font-weight: bold;
       margin-top: 5%;
-    }
-
-    table {
-      margin-top: 50px;
-      max-width: 100%;
-      font-size: small;
-
-      // .header {
-      //   color: #412973;
-      //   // display: flex;
-      //   // justify-content: space-between;
-      // }
     }
   }
 }
