@@ -1,11 +1,16 @@
-.navbar {
+.nav-top {
     background-color: #412973;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 50px;
+    
+    .user-icon{
+        margin-right: 3%;
+        margin-bottom: 1%;
 
-    .navbar-brand{
-        margin-left: -8%;
-        color: white;
         &:hover{
-            color: white;
+            cursor: pointer;
         }
     }
 }
