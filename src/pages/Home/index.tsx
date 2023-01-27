@@ -11,20 +11,19 @@ export function Home() {
 
   const [movements, setMovements] = useState([]);
   
-  async function oi(){
+  async function getMoviments(){
     const seta = await getMovements()
     console.log(seta)
     setMovements([])    
   }
   useEffect(() => {
-    oi()
+    getMoviments()
   }, [movements])
 
 
   return (
      <>
-      <NavTop/>
-      
+      <NavTop/>      
       <div className="content">
         <NavMenu/>
         <main>

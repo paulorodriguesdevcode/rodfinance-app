@@ -1,0 +1,27 @@
+form {
+  margin: 5%;
+  display: grid;
+  flex-wrap: wrap;
+  width: 100%;
+
+  .inputWithLabel {
+    width: 50%;
+    display: grid;
+
+    span {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      font-size: small;
+      color: #412973;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    color: red;
+  }
+}
